@@ -1,0 +1,2 @@
+# Kubuntu-
+记录一下kubuntu用做日常使用的折腾之路，对于其他debian系Linux系统的日常使用有一定参考价值
