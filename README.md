@@ -7,7 +7,13 @@
 
 下载安装完成kubuntu之后，因为ubuntu自带apt软件包管理器的软件源默认是国外源，为提升软件下载速度，需要修改为国内软件源。
 
-使用命令sudo vim /etc/apt/sources.list使用vim编辑器进入sources.list文件进行编辑，如果提示vim就先使用命令sudo apt-get install vim来安装vim
+使用命令```sudo vim /etc/apt/sources.list```使用vim编辑器进入sources.list文件进行编辑，如果提示vim就先使用命令```sudo apt-get install vim```来安装vim
 
-vim进入sources.list文件后，按i键进行输入如下内容
-
+vim进入sources.list文件后，按i键进行复制粘贴输入如下内容
+```
+deb https://mirrors.bfsu.edu.cn/ubuntu/ jammy main restricted universe multiverse
+deb https://mirrors.bfsu.edu.cn/ubuntu/ jammy-updates main restricted universe multiverse
+deb https://mirrors.bfsu.edu.cn/ubuntu/ jammy-backports main restricted universe multiverse
+deb https://mirrors.bfsu.edu.cn/ubuntu/ jammy-security main restricted universe multiverse
+deb http://security.ubuntu.com/ubuntu/ jammy-security main restricted universe multiverse
+```
